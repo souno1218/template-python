@@ -30,6 +30,8 @@ extend-exclude = ["tools"]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
+# 日本語の全角文字（括弧・句読点）を docstring やコメントに書くため無効にする
+ignore = ["RUF001", "RUF002", "RUF003"]
 
 [tool.ty.environment]
 python-version = "3.12"
