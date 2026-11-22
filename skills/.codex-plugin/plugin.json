@@ -1,0 +1,35 @@
+{
+  "name": "okf",
+  "version": "0.1.0",
+  "description": "Agent skills for the Open Knowledge Format (OKF): write OKF bundles from sources the agent can read, and answer from bundles with provenance, trust, freshness, and attestation checks.",
+  "author": {
+    "name": "Open Knowledge Format contributors",
+    "url": "https://github.com/open-knowledge-format"
+  },
+  "homepage": "https://github.com/open-knowledge-format/open-knowledge-format",
+  "repository": "https://github.com/open-knowledge-format/open-knowledge-format",
+  "license": "Apache-2.0",
+  "keywords": [
+    "okf",
+    "open-knowledge-format",
+    "knowledge",
+    "metadata",
+    "agent-skills"
+  ],
+  "skills": "./",
+  "interface": {
+    "displayName": "Open Knowledge Format",
+    "shortDescription": "Write and read OKF knowledge bundles",
+    "longDescription": "Use okf-generate to write, update, or validate an Open Knowledge Format bundle from sources that you can read. Use okf-consume to answer questions from a bundle and to report the trust tier, freshness, and attestation status of each concept that the answer uses.",
+    "developerName": "Open Knowledge Format contributors",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Skills"
+    ],
+    "defaultPrompt": [
+      "Write an OKF bundle that documents this dataset.",
+      "Answer from this OKF bundle and report the trust of each concept."
+    ],
+    "websiteURL": "https://github.com/open-knowledge-format/open-knowledge-format"
+  }
+}

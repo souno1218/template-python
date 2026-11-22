@@ -1,0 +1,20 @@
+{
+  "name": "okf",
+  "displayName": "Open Knowledge Format",
+  "version": "0.1.0",
+  "description": "Agent skills for the Open Knowledge Format (OKF): write OKF bundles from sources the agent can read, and answer from bundles with provenance, trust, freshness, and attestation checks.",
+  "category": "Developer Tools",
+  "keywords": [
+    "okf",
+    "open-knowledge-format",
+    "knowledge",
+    "metadata",
+    "agent-skills"
+  ],
+  "author": {
+    "name": "Open Knowledge Format contributors"
+  },
+  "homepage": "https://github.com/open-knowledge-format/open-knowledge-format",
+  "repository": "https://github.com/open-knowledge-format/open-knowledge-format",
+  "license": "Apache-2.0"
+}

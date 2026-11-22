@@ -1,0 +1,20 @@
+{
+  "name": "open-knowledge-format",
+  "interface": {
+    "displayName": "Open Knowledge Format"
+  },
+  "plugins": [
+    {
+      "name": "okf",
+      "source": {
+        "source": "local",
+        "path": "./skills"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
