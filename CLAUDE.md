@@ -2,8 +2,8 @@
 
 ## 開発環境
 
-- Python は uv で管理する（`uv sync`）。lint と整形は ruff、型検査は mypy（strict）、テストは pytest。
-- コミット前（pre-commit）と CI で、`uv run ruff check .` / `uv run ruff format --check .` / `uv run mypy` / `uv run pytest` / OKF の検証を実行する。変更を終える前に自分でも実行して通すこと。
+- Python は uv で管理する（`uv sync`）。lint と整形は ruff、型検査は ty、テストは pytest。
+- コミット前（pre-commit）と CI で、`uv run ruff check .` / `uv run ruff format --check .` / `uv run ty check` / `uv run pytest` / OKF の検証を実行する。変更を終える前に自分でも実行して通すこと。
 - 最初に `pyproject.toml` の `name`、`src/project_name/` の名前、README の題を、プロジェクト名に合わせて直す。
 
 ## 知識ドキュメントは OKF で書く
