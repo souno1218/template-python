@@ -8,12 +8,11 @@ dependencies = []
 
 [dependency-groups]
 dev = [
-    "mypy>=1.10",
     "pre-commit>=3.7",
     "pytest>=8.0",
     "pyyaml>=6.0",
     "ruff>=0.6",
-    "types-pyyaml",
+    "ty>=0.0.107",
 ]
 
 [build-system]
@@ -32,10 +31,11 @@ extend-exclude = ["tools"]
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
 
-[tool.mypy]
-python_version = "3.12"
-files = ["src", "tests"]
-strict = true
+[tool.ty.environment]
+python-version = "3.12"
+
+[tool.ty.src]
+include = ["src", "tests"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -20,7 +20,7 @@ uv run pre-commit install
 ```bash
 uv run ruff check .        # lint
 uv run ruff format .       # 整形
-uv run mypy                # 型チェック
+uv run ty check            # 型チェック
 uv run pytest              # テスト
 ```
 

@@ -2,4 +2,4 @@ import project_name
 
 
 def test_version() -> None:
-    assert project_name.__version__
+    assert len(project_name.__version__.split(".")) == 3
