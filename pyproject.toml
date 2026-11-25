@@ -27,6 +27,8 @@ line-length = 100
 target-version = "py312"
 src = ["src", "tests"]
 extend-exclude = ["tools"]
+# pre-commit はファイル名を直接渡すので、これが無いと extend-exclude が効かない
+force-exclude = true
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
