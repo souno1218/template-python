@@ -1,0 +1,14 @@
+# GitLab 用の CI。処理は .github/workflows/ci.yml と同じ。
+# 社内の GitLab では動作を確認していない。Runner で使えるイメージと、
+# プロキシ（pip と uv が PyPI に出られるか、社内の CA 証明書が要るか）に合わせて直すこと。
+check:
+  image: python:3.12
+  before_script:
+    - pip install uv
+    - uv sync
+  script:
+    - uv run ruff check .
+    - uv run ruff format --check .
+    - uv run ty check
+    - uv run pytest
+    - uv run python tools/okf/validate.py .okf --strict

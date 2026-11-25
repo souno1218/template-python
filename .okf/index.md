@@ -6,8 +6,8 @@ description: このプロジェクトの施策の提案・判断・実験結果�
 
 # プロジェクト知識ベース
 
-* [Proposal](proposals/) - 施策の開始前に人間が承認する提案書
+* [Proposal](proposals/index.md) - 施策の開始前に人間が承認する提案書
 * [Decision](decisions/index.md) - 採用・不採用などの判断とその理由
-* [Experiment](experiments/) - 実験の設定・結果・考察
-* [Architecture](architecture/) - 構成・設計・モデル構造の説明
-* [Reference](references/) - 外部資料・論文・仕様などの参照メモ
+* [Experiment](experiments/index.md) - 実験の設定・結果・考察
+* [Architecture](architecture/index.md) - 構成・設計・モデル構造の説明
+* [Reference](references/index.md) - 外部資料・論文・仕様などの参照メモ
